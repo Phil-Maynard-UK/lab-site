@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Book a call" />
+    <meta name="author" content="" />
+    <title>Book a call – Consultancy Name</title>
+
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- NAV (same as index, but anchor links point back to index sections) -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Consultancy Name</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+          aria-controls="mainNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html#services">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#portfolio">Work</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#testimonials">Testimonials</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item">
+              <a class="btn btn-primary ms-lg-3 active" href="bookacall.html" aria-current="page">Book a call</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="py-5" style="padding-top: 72px;">
+      <div class="container">
+        <!-- ======================================================
+             BOOK A CALL PAGE
+             Replace the placeholder section below with Calendly
+             (or a booking link) when ready.
+             ====================================================== -->
+        <h1 class="mb-3">Book a call</h1>
+        <p class="lead">
+          A short, no-obligation call to explore what you’re trying to achieve and whether it’s useful to work together.
+        </p>
+
+        <div class="row mt-4">
+          <div class="col-lg-7">
+            <h2 class="h4">What we’ll cover</h2>
+            <ul>
+              <li>What you’re working on (and what’s getting in the way)</li>
+              <li>What “good” could look like in a realistic timeframe</li>
+              <li>Whether I’m the right person to help – and if not, what to do next</li>
+            </ul>
+
+            <h2 class="h4 mt-4">Before the call</h2>
+            <p>
+              Optional: add a sentence about what you’d like them to share in advance (e.g. a short brief, links, context).
+            </p>
+          </div>
+
+          <div class="col-lg-5">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="h5">Booking</h3>
+                <p class="mb-3">
+                  Add your booking link or embed below.
+                </p>
+
+                <!-- Option A: simple link -->
+                <p class="mb-3">
+                  <a class="btn btn-primary w-100" href="https://calendly.com/your-link" target="_blank" rel="noreferrer">
+                    Open booking calendar
+                  </a>
+                </p>
+
+                <!-- Option B: embed (replace with your provider’s embed code)
+                <div>
+                  [Embed code goes here]
+                </div>
+                -->
+                <p class="text-muted small mb-0">
+                  If the link doesn’t work, email <a href="mailto:hello@example.com">hello@example.com</a>.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-5">
+          <a class="btn btn-outline-secondary" href="index.html#contact">Back to contact</a>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 h-100 text-center text-lg-start my-auto">
+            <ul class="list-inline mb-2">
+              <li class="list-inline-item"><a href="index.html">Home</a></li>
+              <li class="list-inline-item">⋅</li>
+              <li class="list-inline-item"><a href="about.html">About</a></li>
+              <li class="list-inline-item">⋅</li>
+              <li class="list-inline-item"><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <p class="text-muted small mb-4 mb-lg-0">&copy; Consultancy Name 2026. All Rights Reserved.</p>
+          </div>
+          <div class="col-lg-6 h-100 text-center text-lg-end my-auto">
+            <ul class="list-inline mb-0">
+              <li class="list-inline-item me-4">
+                <a href="#!" aria-label="LinkedIn"><i class="bi-linkedin fs-3"></i></a>
+              </li>
+              <li class="list-inline-item me-4">
+                <a href="#!" aria-label="X"><i class="bi-twitter fs-3"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#!" aria-label="Website"><i class="bi-globe2 fs-3"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
