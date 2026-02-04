@@ -10926,3 +10926,96 @@ footer.footer {
 .page-content {
   margin-top: 96px; /* height of fixed nav + breathing room */
 }
+
+/* ======================================================
+   BRAND COLOURS
+   Change these variables to re-theme the site quickly
+   ====================================================== */
+
+:root {
+  --brand-primary: #3a5f7d;   /* main accent colour */
+  --brand-primary-hover: #2f4e66;
+  --brand-secondary: #e8b04d; /* optional secondary accent */
+  --brand-dark: #1f2a33;
+  --brand-light: #f8f9fa;
+}
+
+/* ======================================================
+   ACCENT COLOUR OVERRIDES
+   ====================================================== */
+
+/* Primary buttons */
+.btn-primary {
+  background-color: var(--brand-primary);
+  border-color: var(--brand-primary);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: var(--brand-primary-hover);
+  border-color: var(--brand-primary-hover);
+}
+
+/* Outline buttons */
+.btn-outline-secondary {
+  color: var(--brand-primary);
+  border-color: var(--brand-primary);
+}
+
+.btn-outline-secondary:hover {
+  background-color: var(--brand-primary);
+  color: #ffffff;
+}
+
+/* Text accents (icons, highlights) */
+.text-primary {
+  color: var(--brand-primary) !important;
+}
+
+/* ======================================================
+   NAVIGATION BAR
+   ====================================================== */
+
+.navbar {
+  background-color: #ffffff; /* keep clean by default */
+}
+
+.navbar-brand {
+  font-weight: 700;
+  color: var(--brand-dark);
+}
+
+.navbar-brand:hover {
+  color: var(--brand-primary);
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #495057;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:focus {
+  color: var(--brand-primary);
+}
+
+/* Nav CTA button */
+.navbar .btn-primary {
+  padding: 0.4rem 0.9rem;
+}
+
+/* ======================================================
+   FOOTER
+   ====================================================== */
+
+.footer {
+  background-color: var(--brand-light);
+}
+
+.footer a {
+  color: var(--brand-primary);
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
