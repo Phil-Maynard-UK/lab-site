@@ -10934,13 +10934,13 @@ footer.footer {
    ====================================================== */
 
 :root {
-/* =Default blue=============================================
-  --brand-primary: #3a5f7d;   /* main accent colour */
+/* =Default blue============================================= */
+  --brand-primary: #3a5f7d; 
   --brand-primary-hover: #2f4e66;
-  --brand-secondary: #e8b04d; /* optional secondary accent */
+  --brand-secondary: #e8b04d;
   --brand-dark: #1f2a33;
   --brand-light: #f8f9fa;
- ====================================================== */
+ /* ====================================================== */
   
 /* =Calm blue=============================================
   --brand-primary: #3a5f7d;
