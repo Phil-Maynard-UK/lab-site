@@ -11003,7 +11003,7 @@ footer.footer {
    NAVBAR PRIMARY CTA – FORCE SOLID BACKGROUND
    ====================================================== */
 
-.navbar .btn-primary {
+.btn-primary {
   --bs-btn-bg: var(--brand-primary);
   --bs-btn-border-color: var(--brand-primary);
   --bs-btn-color: #fff;
