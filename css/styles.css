@@ -11021,3 +11021,49 @@ footer.footer {
   color: var(--brand-primary) !important;
 }
 
+/* ======================================================
+   NAVIGATION BAR
+   ====================================================== */
+
+.navbar {
+  background-color: #ffffff; /* keep clean by default */
+}
+
+.navbar-brand {
+  font-weight: 700;
+  color: var(--brand-dark);
+}
+
+.navbar-brand:hover {
+  color: var(--brand-primary);
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #495057;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:focus {
+  color: var(--brand-primary);
+}
+
+/* Nav CTA button */
+.navbar .btn-primary {
+  padding: 0.4rem 0.9rem;
+}
+
+/* ======================================================
+   FOOTER
+   ====================================================== */
+
+.footer {
+  background-color: var(--brand-light);
+}
+
+.footer a {
+  color: var(--brand-primary);
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
