@@ -10935,10 +10935,40 @@ footer.footer {
 
 :root {
 
+  /* =Default blue=============================================
+  --brand-primary: #3a5f7d;
+  --brand-primary-hover: #2f4e66;
+  --brand-secondary: #e8b04d;
+  --brand-dark: #1f2a33;
+  --brand-light: #f8f9fa;
+  ====================================================== */
+
+/* =Calm blue=============================================
+  --brand-primary: #3a5f7d;
+  --brand-primary-hover: #2f4e66;
+  --brand-secondary: #e8b04d;
+  --brand-dark: #1f2a33;
+  ====================================================== */
+
+/* =Deep green===========================================  */
+  --brand-primary: #3f6f5e;
+  --brand-primary-hover: #345c4e;
+  --brand-secondary: #d8b26e;
+  --brand-dark: #24352f;
+/*  ====================================================== */
+/* =Charcole + ochre ====================================  
+  --brand-primary: #5a5a5a;
+  --brand-primary-hover: #444444;
+  --brand-secondary: #d6a94a;
+  --brand-dark: #1f1f1f;
+   ====================================================== */
+
+/* =Muted plum ==========================================  
   --brand-primary: #6b4e71;
   --brand-primary-hover: #5a405f;
   --brand-secondary: #e3c26b;
   --brand-dark: #2b1f2e;
+   ====================================================== */
 }
 
 /* ======================================================
