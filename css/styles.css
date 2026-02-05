@@ -10955,7 +10955,7 @@ footer.footer {
   --brand-dark: #24352f;
    ====================================================== */
 /* =Charcole + ochre ====================================  */
-  --brand-primary: #5a5a5a;
+  --brand-primary-new: #5a5a5a;
   --brand-primary-hover: #444444;
   --brand-secondary: #d6a94a;
   --brand-dark: #1f1f1f;
@@ -10973,8 +10973,8 @@ footer.footer {
    ====================================================== */
 
 .btn-primary {
-  --bs-btn-bg: var(--brand-primary);
-  --bs-btn-border-color: var(--brand-primary);
+  --bs-btn-bg: var(--brand-primary-new);
+  --bs-btn-border-color: var(--brand-primary-new);
   --bs-btn-color: #fff;
 
   --bs-btn-hover-bg: var(--brand-primary-hover);
