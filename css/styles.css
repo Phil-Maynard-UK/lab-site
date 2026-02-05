@@ -10973,8 +10973,8 @@ footer.footer {
    ====================================================== */
 
 .btn-primary {
-  --bs-btn-bg: #f00 /* var(--brand-primary) */;
-  --bs-btn-border-color: var(--brand-primary);
+  --bs-btn-bg: var(--brand-primary-hover);
+  --bs-btn-border-color: var(--brand-primary-hover);
   --bs-btn-color: #fff;
 
   --bs-btn-hover-bg: var(--brand-primary-hover);
