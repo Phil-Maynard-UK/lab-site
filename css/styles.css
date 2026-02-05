@@ -10984,10 +10984,6 @@ footer.footer {
   --bs-btn-active-bg: var(--brand-primary-hover);
   --bs-btn-active-border-color: var(--brand-primary-hover);
   --bs-btn-active-color: #fff;
-
-  background-color: var(--brand-primary);
-  border-color: var(--brand-primary);
-  color: #fff;
 }
 
 
