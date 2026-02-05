@@ -10968,4 +10968,27 @@ footer.footer {
    ====================================================== */
 }
 
+/* ======================================================
+   NAVBAR PRIMARY CTA – FORCE SOLID BACKGROUND
+   ====================================================== */
+
+.btn-primary {
+  --bs-btn-bg: var(--brand-primary-hover);
+  --bs-btn-border-color: var(--brand-primary-hover);
+  --bs-btn-color: #fff;
+
+  --bs-btn-hover-bg: var(--brand-primary-hover);
+  --bs-btn-hover-border-color: var(--brand-primary-hover);
+  --bs-btn-hover-color: #fff;
+
+  --bs-btn-active-bg: var(--brand-primary-hover);
+  --bs-btn-active-border-color: var(--brand-primary-hover);
+  --bs-btn-active-color: #fff;
+
+  background-color: var(--brand-primary);
+  border-color: var(--brand-primary);
+  color: #fff;
+}
+
+
 
