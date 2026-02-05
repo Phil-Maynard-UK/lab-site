@@ -11000,6 +11000,29 @@ footer.footer {
 }
 
 /* ======================================================
+   PRIMARY BUTTON – force all states to use brand colour
+   ====================================================== */
+
+.btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: var(--brand-primary);
+  --bs-btn-border-color: var(--brand-primary);
+
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: var(--brand-primary-hover);
+  --bs-btn-hover-border-color: var(--brand-primary-hover);
+
+  --bs-btn-focus-shadow-rgb: 0, 0, 0; /* keeps focus shadow subtle */
+
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: var(--brand-primary-hover);
+  --bs-btn-active-border-color: var(--brand-primary-hover);
+
+  --bs-btn-disabled-bg: var(--brand-primary);
+  --bs-btn-disabled-border-color: var(--brand-primary);
+}
+
+/* ======================================================
    NAVIGATION BAR
    ====================================================== */
 
