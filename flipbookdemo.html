@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Circular Slide Projector – Story Flip</title>
+
+<style>
+:root {
+  --slide-width: 1000px;
+  --slide-height: 773px;
+}
+
+body {
+  margin: 0;
+  background: #111;
+  overflow: hidden;
+  font-family: system-ui, sans-serif;
+  color: white;
+}
+
+/* CAMERA */
+.viewer {
+  position: fixed;
+  inset: 0;
+  perspective: 2000px;
+  display: grid;
+  place-items: center;
+}
+
+/* STAGE (scaled, not the camera) */
+.stage {
+  transform-origin: center;
+  transition: transform 0.8s ease;
+}
+
+/* TRAY */
+.wheel {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 1s ease;
+}
+
+/* SLIDES */
+.slide {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  display: grid;
+  place-items: center;
+}
+
+/* FRAME */
+.frame {
+  width: var(--slide-width);
+  height: var(--slide-height);
+  background: #000;
+  display: grid;
+  place-items: center;
+}
+
+/* IMAGES */
+.frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* ANSWER */
+.answer {
+  padding: 3rem;
+  text-align: center;
+}
+
+/* STORY B IS UPSIDE DOWN */
+.upside-down .frame {
+  transform: rotate(180deg);
+}
+
+.hint {
+  position: fixed;
+  bottom: 1.5rem;
+  width: 100%;
+  text-align: center;
+  opacity: 0.6;
+  font-size: 0.85rem;
+  pointer-events: none;
+}
+
+</style>
+</head>
+
+<body>
+<div class="viewer">
+  <div class="stage" id="stage">
+    <div class="wheel" id="wheel">
+
+      <!-- STORY A -->
+      <div class="slide story-a">
+        <div class="frame">
+          <img src="https://images.squarespace-cdn.com/content/v1/687512ad52c772117ab6bb20/7556e277-ff78-45ba-aa7a-e97faf25d7bf/1.png?format=1000w">
+        </div>
+      </div>
+
+      <div class="slide story-a">
+        <div class="frame">
+          <img src="https://images.squarespace-cdn.com/content/v1/687512ad52c772117ab6bb20/be224566-b9c3-49b4-9d21-4f12223c79f0/2.png?format=1000w">
+        </div>
+      </div>
+
+      <div class="slide story-a">
+        <div class="frame">
+          <img src="https://images.squarespace-cdn.com/content/v1/687512ad52c772117ab6bb20/51ab7a53-3b95-4bc0-b1b4-d89a081b81d6/3.png?format=1000w">
+        </div>
+      </div>
+
+
+      <div class="slide story-a">
+        <div class="frame">
+          <img src="https://images.squarespace-cdn.com/content/v1/687512ad52c772117ab6bb20/6678980f-3961-4c30-a5ca-74d1c1669339/4.png?format=1000w">
+        </div>
+      </div>
+
+
+      <div class="slide story-a">
+        <div class="frame">
+          <img src="https://images.squarespace-cdn.com/content/v1/687512ad52c772117ab6bb20/b16ea890-72b0-4e91-ae5e-e6569f6661a3/5.png?format=1000w">
+        </div>
+      </div>
+
+
+      <div class="slide story-a">
+        <div class="frame">
+          <img src="https://images.squarespace-cdn.com/content/v1/687512ad52c772117ab6bb20/ada931a3-7b01-4aca-8d3a-255d19ea30c8/6.png?format=1000w">
+        </div>
+      </div>
+
+
+      <div class="slide story-a">
+        <div class="frame">
+          <img src="https://images.squarespace-cdn.com/content/v1/687512ad52c772117ab6bb20/6e50b959-23e8-4b57-8fec-cced2cfdc2ea/7.png?format=1000w">
+        </div>
+      </div>
+
+
+
+      <div class="slide story-a">
+        <div class="frame">
+          <img src="https://images.squarespace-cdn.com/content/v1/687512ad52c772117ab6bb20/105dcad8-123b-4005-a89d-c24dab53e0ab/8.png?format=1000w">
+        </div>
+      </div>
+
+
+
+      <div class="slide story-a">
+        <div class="frame">
+          <img src="https://images.squarespace-cdn.com/content/v1/687512ad52c772117ab6bb20/d6821784-be6c-465c-ad7f-e91a84c0b618/9.png?format=1000w">
+        </div>
+      </div>
+
+
+
+      <div class="slide story-a">
+        <div class="frame">
+          <img src="https://images.squarespace-cdn.com/content/v1/687512ad52c772117ab6bb20/b356fcef-3362-4fa7-9630-54cc1f43f06e/10.png?format=1000w">
+        </div>
+      </div>
+
+
+
+      <div class="slide story-a">
+        <div class="frame">
+          <img src="https://images.squarespace-cdn.com/content/v1/687512ad52c772117ab6bb20/2db4b0ef-6aa0-4caf-b94a-35e298cabb04/11.png?format=1000w">
+        </div>
+      </div>
+
+
+
+      <div class="slide story-a">
+        <div class="frame">
+          <img src="https://images.squarespace-cdn.com/content/v1/687512ad52c772117ab6bb20/a85e6b36-8f7f-48a0-a1e9-f02b8b40da54/12.png?format=1000w">
+        </div>
+      </div>
+
+      <div class="slide story-a story-a answer-slide">
+        <div class="frame">
+          <img src="https://images.squarespace-cdn.com/content/v1/687512ad52c772117ab6bb20/daa6dc17-f944-4cba-924e-eef35e0572f1/13.png?format=1000w">
+        </div>
+      </div>
+
+
+      <!-- STORY B (MOUNTED UPSIDE DOWN) -->
+      <div class="slide story-b">
+        <div class="frame">
+          <img src="https://images.squarespace-cdn.com/content/v1/687512ad52c772117ab6bb20/87bbd55d-eb5f-4fca-b345-4ee370f9dc80/26.png?format=1000w">
+        </div>
+      </div>
+
+      <div class="slide story-b">
+        <div class="frame">
+          <img src="https://images.squarespace-cdn.com/content/v1/687512ad52c772117ab6bb20/ba11497e-29d8-4aa3-b023-5e4fd848e89c/25.png?format=1000w">
+        </div>
+      </div>
+
+      <div class="slide story-b">
+        <div class="frame">
+          <img src="https://images.squarespace-cdn.com/content/v1/687512ad52c772117ab6bb20/18900326-12d2-4510-8501-7957d55bab49/24.png?format=1000w">
+        </div>
+      </div>
+
+
+      <div class="slide story-b">
+        <div class="frame">
+          <img src="https://images.squarespace-cdn.com/content/v1/687512ad52c772117ab6bb20/95c187ab-87dd-4845-9383-81b7f2e5c749/23.png?format=1000w">
+        </div>
+      </div>
+
+
+      <div class="slide story-b">
+        <div class="frame">
+          <img src="https://images.squarespace-cdn.com/content/v1/687512ad52c772117ab6bb20/ffc10faf-86c5-43c3-8d0c-99dea8ecca85/22.png?format=1000w">
+        </div>
+      </div>
+
+
+      <div class="slide story-b">
+        <div class="frame">
+          <img src="https://images.squarespace-cdn.com/content/v1/687512ad52c772117ab6bb20/2171dc00-1cfc-47a2-9139-1ed7e2ce53c6/21.png?format=1000w">
+        </div>
+      </div>
+
+
+      <div class="slide story-b">
+        <div class="frame">
+          <img src="https://images.squarespace-cdn.com/content/v1/687512ad52c772117ab6bb20/875d9a4f-b05e-4f3d-bd70-c432741ce630/20.png?format=1000w">
+        </div>
+      </div>
+
+
+      <div class="slide story-b">
+        <div class="frame">
+          <img src="https://images.squarespace-cdn.com/content/v1/687512ad52c772117ab6bb20/ef83d1d9-dac7-4b3d-81f7-9c805f464ee6/19.png?format=1000w">
+        </div>
+      </div>
+
+
+      <div class="slide story-b">
+        <div class="frame">
+          <img src="https://images.squarespace-cdn.com/content/v1/687512ad52c772117ab6bb20/07e3517d-2333-4ba1-ab6a-77abf297e834/18.png?format=1000w">
+        </div>
+      </div>
+
+
+      <div class="slide story-b">
+        <div class="frame">
+          <img src="https://images.squarespace-cdn.com/content/v1/687512ad52c772117ab6bb20/14ba6bca-f43c-4978-84d9-802c825741ce/17.png?format=1000w">
+        </div>
+      </div>
+
+
+      <div class="slide story-b">
+        <div class="frame">
+          <img src="https://images.squarespace-cdn.com/content/v1/687512ad52c772117ab6bb20/9f773601-75d2-418f-b7a2-2e22d57177c9/16.png?format=1000w">
+        </div>
+      </div>
+
+
+      <div class="slide story-b">
+        <div class="frame">
+          <img src="https://images.squarespace-cdn.com/content/v1/687512ad52c772117ab6bb20/22b87f9a-3f08-41ba-8f03-c543cd272c1c/15.png?format=1000w">
+        </div>
+      </div>
+
+
+      <div class="slide story-b upside-down answer-slide">
+        <div class="frame answer">
+          <img src="https://images.squarespace-cdn.com/content/v1/687512ad52c772117ab6bb20/daa6dc17-f944-4cba-924e-eef35e0572f1/13.png?format=1000w">
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="hint">Click to advance</div>
+
+<script>
+const stage = document.getElementById("stage");
+const wheel = document.getElementById("wheel");
+const slides = Array.from(document.querySelectorAll(".slide"));
+const answerSlides = slides.filter(s => s.classList.contains("answer-slide"));
+
+const SLIDE_WIDTH = 1200;
+const SLIDE_HEIGHT = 900;
+
+
+const spacing = 0.5; // try values between 0.45 and 0.8
+
+const radius =
+  (Math.max(SLIDE_WIDTH, SLIDE_HEIGHT) /
+   Math.tan(Math.PI / slides.length)) * spacing;
+
+
+
+/* const radius = Math.max(SLIDE_WIDTH, SLIDE_HEIGHT) * 1.0; */
+const angleStep = 360 / slides.length;
+
+let index = 0;
+let trayFlipped = false;
+let transitioning = false;
+
+/* Layout slides on circular tray */
+slides.forEach((slide, i) => {
+  const angle = i * angleStep;
+  slide.style.transform =
+    `translate(-50%, -50%) rotateY(${angle}deg) translateZ(${radius}px)`;
+});
+
+/* Scale to always fit viewport */
+function updateScale() {
+  const scaleX = window.innerWidth / SLIDE_WIDTH;
+  const scaleY = window.innerHeight / SLIDE_HEIGHT;
+  const scale = Math.min(scaleX, scaleY) * 0.95;
+  stage.style.transform = `scale(${scale})`;
+}
+
+
+/* Advance forward */
+function advance() {
+  if (transitioning) return;
+
+  const currentSlide = slides[index % slides.length];
+  const isAnswer = currentSlide.classList.contains("answer-slide");
+
+  index++;
+
+  /* If crossing stories → flip tray */
+  if (isAnswer) {
+    transitioning = true;
+
+    /* zoom out */
+    stage.style.transform += " scale(0.6)";
+
+    setTimeout(() => {
+      trayFlipped = !trayFlipped;
+      wheel.style.transform =
+        `rotateZ(${trayFlipped ? 180 : 0}deg)
+         rotateY(${-index * angleStep}deg)`;
+    }, 350);
+
+    setTimeout(() => {
+      updateScale();
+      transitioning = false;
+    }, 1100);
+
+    return;
+  }
+
+  wheel.style.transform =
+    `rotateZ(${trayFlipped ? 180 : 0}deg)
+     rotateY(${-index * angleStep}deg)`;
+
+}
+
+window.addEventListener("resize", updateScale);
+document.addEventListener("click", advance);
+
+updateScale();
+</script>
+
+</body>
+</html>
