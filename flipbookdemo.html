@@ -6,12 +6,21 @@
 <title>Circular Slide Projector – Story Flip</title>
 
 <style>
+html,
+body {
+  width: 100%;
+  min-height: 100%;
+}
+
 body {
   margin: 0;
   background: #111;
   overflow: hidden;
   font-family: system-ui, sans-serif;
   color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 </style>
 </head>
@@ -70,8 +79,8 @@ body {
     position: relative;
     width: 100%;
     max-width: 100%;
-    aspect-ratio: 1000 / 773;
-    min-height: 280px;
+    min-height: 0;
+    flex: 1 1 auto;
     background: var(--pm-bg);
     overflow: hidden;
     isolation: isolate;
@@ -150,7 +159,7 @@ body {
     width: 100%;
     text-align: center;
     padding: 0.75rem 0.5rem;
-    margin-top: 0.5rem;
+    margin-top: 0;
     background: #000;
     color: #fff;
     font-size: 0.85rem;
